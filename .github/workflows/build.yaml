@@ -11,8 +11,7 @@ jobs:
       - uses: ikalnytskyi/action-setup-postgres@v4
 
       - run: |
-        createdb --owner postgres mydatabase
-        psql -l
+          createdb --owner postgres mydatabase
 
       # Downloads a copy of the code in your repository before running CI tests
       - name: Check out repository code
