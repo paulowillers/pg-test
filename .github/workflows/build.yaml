@@ -28,7 +28,7 @@ jobs:
 
     steps:
       - name: Test psql
-        run: psql -l -U postgres
+        run: psql -l -U postgres -h localhost
 
       # Downloads a copy of the code in your repository before running CI tests
       - name: Check out repository code
