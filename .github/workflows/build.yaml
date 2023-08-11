@@ -12,7 +12,7 @@ jobs:
 
       - run: |
         createdb --owner postgres mydatabase
-         psql -l
+        psql -l
 
       # Downloads a copy of the code in your repository before running CI tests
       - name: Check out repository code
